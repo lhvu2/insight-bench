@@ -91,7 +91,7 @@ if __name__ == "__main__":
     # exp_list
     exp_list = []
     for benchmark_type in ["toy"]:
-        for model_name in ["gpt-4o-mini"]:
+        for model_name in ["Azure/gpt-4o"]:
             exp_list.append(
                 {
                     "benchmark_type": benchmark_type,
@@ -102,7 +102,10 @@ if __name__ == "__main__":
             )
 
     # set open ai env
-    os.environ["OPENAI_API_KEY"] = args.openai_api_key
+    # os.environ["OPENAI_API_KEY"] = args.openai_api_key
+
+    # Set OpenAI API Key
+    os.environ["OPENAI_API_KEY"] = os.environ["IBM_LITELLM_API_KEY"] 
 
     # Loop through experiments
     for exp_dict in exp_list:
