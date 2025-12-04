@@ -1,0 +1,16 @@
+[
+    {
+        "question": "What is the distribution of incidents across different categories and assignment groups?",
+        "answer": "The distribution of incidents shows that the majority are categorized under 'Hardware' and assigned to the 'Hardware' group, with 336 incidents, while 'Inquiry / Help' incidents are spread across multiple assignment groups but have significantly lower counts, such as only 25 incidents assigned to 'Service Desk'.",
+        "insight": "Hardware-related incidents dominate the dataset, accounting for 67.2% of all incidents, while 'Inquiry / Help' incidents are the least frequent and dispersed across assignment groups, highlighting a potential focus area for resource allocation.",
+        "justification": "The analysis reveals that 'Hardware - Hardware' has the highest count of incidents (336), followed by 'Network - Network' (51), and 'Software - Software' (41), whereas 'Inquiry / Help' incidents are distributed across assignment groups with counts as low as 1 for 'Database' and 'Software', indicating a stark imbalance in incident distribution across categories and groups.",
+        "output_folder": "/home/lhvu/projects/insight-bench/tests/../results/sample/question_0"
+    },
+    {
+        "question": "What is the average resolution time for incidents, and are there any noticeable trends or anomalies in resolution times over time?",
+        "answer": "The average resolution time for incidents is approximately 174.4 hours, with noticeable variability ranging from 24 hours to a maximum of 482.2 hours, and trends showing spikes in resolution times on specific dates such as February 5th and February 9th.",
+        "insight": "Resolution times tend to spike significantly on certain dates, such as February 5th (372.7 hours) and February 9th (365.7 hours), which may indicate operational bottlenecks or high-priority incidents requiring extended resolution efforts.",
+        "justification": "The analysis reveals that the average resolution time is 174.4 hours with a standard deviation of 95.2 hours, indicating variability in incident resolution times; specific dates like February 5th and February 9th show unusually high resolution times, suggesting potential anomalies or trends worth investigating further.",
+        "output_folder": "/home/lhvu/projects/insight-bench/tests/../results/sample/question_1"
+    }
+]

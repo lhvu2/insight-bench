@@ -1,0 +1,14 @@
+{
+    "name": "Y-axis Data",
+    "description": "Counts of incidents for each category and assignment group combination.",
+    "value": [
+        336,
+        51,
+        41,
+        40,
+        25,
+        5,
+        1,
+        1
+    ]
+}

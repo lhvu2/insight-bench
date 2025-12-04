@@ -1,0 +1,14 @@
+{
+    "name": "Incident Distribution Stats",
+    "description": "Counts of incidents across different categories and assignment groups.",
+    "value": {
+        "Hardware - Hardware": 336,
+        "Network - Network": 51,
+        "Software - Software": 41,
+        "Database - Database": 40,
+        "Inquiry / Help - Service Desk": 25,
+        "Inquiry / Help - Hardware": 5,
+        "Inquiry / Help - Database": 1,
+        "Inquiry / Help - Software": 1
+    }
+}

@@ -1475,9 +1475,15 @@ def analysis_nb_to_gt(fname_notebook, include_df_head=False) -> None:
 
 
 def get_chat_model(model_name, temperature=0):
-    if "gpt" in model_name:
-        client = OpenAI(api_key=OPENAI_API_KEY)
-        llm = (
+    import openai
+    import os
+
+    client = openai.OpenAI(
+        api_key=os.environ["IBM_LITELLM_API_KEY"],
+        base_url=os.environ["IBM_LITELLM_URL"] # LiteLLM Proxy is OpenAI compatible, Read More: https://docs.litellm.ai/docs/proxy/user_keys
+    )
+
+    llm = (
             lambda content: client.chat.completions.create(
                 model=model_name,
                 temperature=temperature,
@@ -1485,7 +1491,19 @@ def get_chat_model(model_name, temperature=0):
             )
             .choices[0]
             .message.content
-        )
+    )
+
+    # if "gpt" in model_name:
+    #     client = OpenAI(api_key=OPENAI_API_KEY)
+    #     llm = (
+    #         lambda content: client.chat.completions.create(
+    #             model=model_name,
+    #             temperature=temperature,
+    #             messages=[{"role": "user", "content": content}],
+    #         )
+    #         .choices[0]
+    #         .message.content
+    #     )
 
     return llm
 

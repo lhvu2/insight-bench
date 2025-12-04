@@ -1,0 +1,14 @@
+{
+    "name": "X-axis Data",
+    "description": "Unique category and assignment group combinations.",
+    "value": [
+        "Hardware - Hardware",
+        "Network - Network",
+        "Software - Software",
+        "Database - Database",
+        "Inquiry / Help - Service Desk",
+        "Inquiry / Help - Hardware",
+        "Inquiry / Help - Database",
+        "Inquiry / Help - Software"
+    ]
+}

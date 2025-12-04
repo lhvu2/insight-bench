@@ -1,0 +1,16 @@
+{
+    "name": "Average Resolution Time Stats",
+    "description": "Statistics of average resolution time for incidents over time.",
+    "value": {
+        "avg_resolution_time": {
+            "count": 281.0,
+            "mean": 174.4046758687438,
+            "std": 95.18010944129355,
+            "min": 24.0,
+            "25%": 119.36144014741083,
+            "50%": 168.02520235230764,
+            "75%": 228.78902672004304,
+            "max": 482.2048627753355
+        }
+    }
+}

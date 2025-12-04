@@ -1,0 +1,7 @@
+{
+    "answer": "The average resolution time for incidents is approximately 174.4 hours, with noticeable variability ranging from 24 hours to a maximum of 482.2 hours, and trends showing spikes in resolution times on specific dates such as February 5th and February 9th.",
+    "insight": "Resolution times tend to spike significantly on certain dates, such as February 5th (372.7 hours) and February 9th (365.7 hours), which may indicate operational bottlenecks or high-priority incidents requiring extended resolution efforts.",
+    "justification": "The analysis reveals that the average resolution time is 174.4 hours with a standard deviation of 95.2 hours, indicating variability in incident resolution times; specific dates like February 5th and February 9th show unusually high resolution times, suggesting potential anomalies or trends worth investigating further.",
+    "output_folder": "/home/lhvu/projects/insight-bench/tests/../results/sample/question_1",
+    "question": "What is the average resolution time for incidents, and are there any noticeable trends or anomalies in resolution times over time?"
+}
