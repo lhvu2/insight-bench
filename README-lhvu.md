@@ -10,6 +10,11 @@
 
 `cd tests; python test_with_litellm_ibm.py` to test the basic code
 
+# Total insights and plots
+
+Each sample has a list of insights, so 100 samples have 428 insights. Each insight can include a plot, which can be found in the Jupyter notebook (the actual figure) or a description of the same plot in the corresponding json file.
+
+`tests/get_stats.py` shows: `total insights count = 428, total plots count = 335`
 
 # Stats
 
